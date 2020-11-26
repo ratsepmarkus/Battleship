@@ -11,12 +11,10 @@ messageInput.addEventListener('keyup', e => {
 })
 
 socket.on('chatMessage', res => {
-    const messageSender = document.createElement('li')
-    messageSender.innerText = res.userid + ': '
-        const messageLi = document.createElement('li')
-        messageLi.innerText =res.message
-    messageContainer.append(messageSender)
+    const messageLi = document.createElement('li')
+    messageLi.innerText = res.userid + ': ' + res.message
     messageContainer.append(messageLi)
+    messageContainer.scrollTop = messageContainer.scrollHeight;
 
 })
 

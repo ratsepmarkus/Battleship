@@ -18,15 +18,11 @@
 
     <h1>Chat</h1>
     <ul id="message-container"></ul>
-    <input id="message-box" type="text">
+    <input id="message-box" type="text" placeholder="Write a message...">
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/chat.js"></script>
     <script src="/js/ship.js"></script>
     <style>
-.body {
-
-}
-
 #container   {
     display: flex;
 }
@@ -68,6 +64,15 @@ ul {
     display: flex;
     flex-direction: column;
 }
+
+#message-container {
+    border: solid black 0.5px;
+    width: 500px;
+    height: 200px;
+    overflow: auto;
+    padding: 0px 5px;
+}
+
 </style>
 </body>
 

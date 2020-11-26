@@ -144,6 +144,3 @@ cellDivs.forEach(el => {
     })
 })
 
-
-
-console.log(gameBoard)
