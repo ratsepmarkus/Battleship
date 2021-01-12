@@ -1,5 +1,5 @@
 # Battleship
 
-Online game(no bots)
-Chat(overall & private)
+Online game(no bots),
+Chat(overall & private),
 Counter(Wins & losses)
